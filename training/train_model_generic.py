@@ -55,12 +55,12 @@ def train_model_generic(
             
             # If the model outputs multiple values (like latents and logits),
             # might do something like:
-            # latents, logits = outputs
+            latents, logits = outputs
             # / check the type. for now: outputs is directly
             # the "prediction" used for loss calculation
 
             # Compute loss
-            loss = criterion(outputs, y_batch)
+            loss = criterion(logits, y_batch)
 
             # Backprop & optimize
             optimizer.zero_grad()
