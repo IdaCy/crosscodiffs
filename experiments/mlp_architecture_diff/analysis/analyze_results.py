@@ -38,7 +38,7 @@ def analyze_results(crosscoder, model1, model2, dataset):
     mse = F.mse_loss(crosscoded, latents2).item()
 
     # Dimension-wise correlation
-    # We'll compute Pearson correlation dimension by dimension
+    # Pearson correlation dimension by dimension
     corrs = []
     for i in range(latents2.shape[1]):
         x_i = crosscoded[:, i]
