@@ -1,4 +1,4 @@
-# Crosscoders Model Diffint
+# Crosscoders Model Diffing
 
 ## Planned structure:
 ```
